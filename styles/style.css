@@ -1,0 +1,103 @@
+body{
+	background:-webkit-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("media/background.jpg") no-repeat fixed;
+	background:-o-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("media/background.jpg") no-repeat fixed;
+	background:-moz-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("media/background.jpg") no-repeat fixed;
+	background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("media/background.jpg") no-repeat fixed;
+	/* background-image:url("media/background.jpg");	*/
+	background-size: cover;
+	font-family: 'Orbitron', sans-serif;
+	color:#000;
+}
+
+.container{
+	font-family: 'Orbitron', sans-serif;
+	margin-top:50px;
+}
+
+.calculator-container{
+	background-color:#dfd8d0;
+	border:2px solid #908b85;
+	border-radius:20px;
+	box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+	height:410px;
+	width:300px;
+	margin-top:10%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.calc-header{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.calc-input-screen{
+	background-color: #c3c2ab;
+	border-radius:6px;
+	width:85%;
+	height:65px;
+	border:2px solid #b4b39d;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.entry{
+	margin-right:10px;
+	font-size:35px;
+}
+
+.history{
+	position:relative;
+	height:10px;
+	bottom:17px;
+	margin-right:14px;
+	color:#8b8b7b;
+	font-size: 12px;
+
+}
+
+.buttons{
+	font-size:16px;
+	font-weight:bold;
+	height:auto;
+	width:280px;
+	margin-top:15px;
+	margin-left:15px;
+	color:#FFF;
+	display:inline-block;
+}
+
+button{
+	background-color:#3a3a3a;
+	border-radius:8px;
+	border:none;
+	height:40px;
+	width:50px;
+	margin: 0 4px 10px 8px;
+	box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+}
+
+.equal-button{
+	height:90px;
+	position:absolute;
+}
+
+.zero-button{
+	width:117px;
+}
+
+.red{
+	background-color: #a72d45;
+	box-shadow: 0px 3px 0px 0px #671c2a;
+	font-size:14px;
+}
+
+button,
+button:hover,
+button:active,
+button:visited{
+	text-decoration: none !important;
+	outline:none !important;
+}
