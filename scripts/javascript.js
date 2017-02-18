@@ -97,11 +97,13 @@
 			arrayExpression[currentIndex] = result;
 			arrayExpToString();
 
+			/*
+
 			console.log("currentIndex: " + currentIndex);
 			console.log("currentExpression: "+ currentExpression);
 			console.log(arrayExpression);
 			console.log("expression: "+expression);
-
+			*/
 
 		}
 	}
