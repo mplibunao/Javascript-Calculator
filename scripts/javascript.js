@@ -213,24 +213,58 @@ updateCurrentAndHistory();
 $('button').on('click', function(){
 	var input = $(this).val();
 	checkInput(input);
-	
-
-	/*
-	check if input is a number, operator or function
-	use function to check what value that input was
-	
-	- if number or . check first the current value in the screen
-	if 0, then delete that 0 and add input (except for .)
-		else get the value and append the new input 
-	print it in screen and history
-
-	- if operator was pressed check first the last value in expression
-		if it was another operator then replace that operator with this new operator
-	
-	*/
-
-
 })
+
+var json = {
+		106: "*",
+		107: "+",
+		109: "-",
+		111: "/",
+		13: "=",
+		8: "ce",
+		46: 'ac',
+		48: '0',
+		49: '1',
+		50: '2',
+		51: '3',
+		52: '4',
+		53: '5',
+		54: '6',
+		55: '7',
+		56: '8',
+		57: '9',
+		96: '0',
+		97: '1',
+		98: '2',
+		99: '3',
+		100: '4',
+		101: '5',
+		102: '6',
+		103: '7',
+		104: '8',
+		105: '9',
+	}
+
+/*	@ Event listener for keyboard equivalent of the calculator
+	@ Uses json as the storage for the relevant keys and their value
+	@ Calls checkInput()
+*/
+$('body').on('keyup', function(e){
+
+	if (json.hasOwnProperty(e.keyCode.toString()) === true){
+		console.log(e.keyCode);
+		console.log(json[e.keyCode.toString()]);
+		checkInput(json[e.keyCode.toString()]);
+	}
+
+	
+
+
+});
+
+/*
+	
+*/
 
 
 });
