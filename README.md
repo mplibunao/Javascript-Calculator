@@ -13,3 +13,11 @@ Extra functions:
 - You don't need to clear before doing the next calculation. After calculation, allows you to immediately type in your next expression instead of clearing first if you don't want to chain anymore operators
 - Doesn't allow more than one decimal point
 - Operator precedence works
+- Added keyboard support
+
+Supported Keys
+0-9
+Operators (only supports numpad)
+All Clear (Delete)
+Clear (Backspace)
+Can also use Enter for =
